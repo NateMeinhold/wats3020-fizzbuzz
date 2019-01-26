@@ -37,9 +37,9 @@ fbResults = [];
 
 // TODO: Create a `for` loop that will execute the `maxNumber` of times.
 
-for (let i=0; 1< maxNumber; i++){
+for (let i=1; i<= maxNumber; i++){
   let  outputString = '';
-  if (i % 3 === 0) {
+  if (i % 3 ===0) {
       outputString += "fizz";
   }
   if (i % 5 ===0) {
@@ -52,9 +52,8 @@ for (let i=0; 1< maxNumber; i++){
       outputString = i;
   }
   fbResults.push(outputString);
-  console.log("inloop")
+  //console.log("inloop")
 }
-
 
 // TODO: Create logic inside the `for` loop to calculate FizzBuzz.  This will
 // require the use of several conditional statements that use the `%` operator.
@@ -65,6 +64,12 @@ for (let i=0; 1< maxNumber; i++){
 
 // TODO: Use a `for ... of` loop to concatenate the values from `fbResults`
 // into the variable `fbText`.
+
+fbText = '';
+
+for (let value of fbResults){
+    fbText += value + '\n';
+}
 
 
 ///////////////////////////////////////////////////////////////////////
